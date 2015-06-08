@@ -1,7 +1,7 @@
 class TodosController < ApplicationController
 
   def index
-    render html: Todo.all
+    render "index.html.erb", locals: { todos: Todo.all }
   end
 
   def new
