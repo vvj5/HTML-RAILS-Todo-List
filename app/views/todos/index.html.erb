@@ -1,8 +1,4 @@
-
-
-
-
-      <div class="black1">
+    <div class="black1">
         <div class="blue2">
           <div class="text3">
              <% todos.each do |todo| %>
@@ -12,25 +8,4 @@
         </div>
       </div>
     </div>
-
-
-
-
-
-
-
-
-%= button_to "New", { action: "new" }, form_class: "new-thing" %>
-# => "<form method="post" action="/controller/new" class="new-thing">
-#      <input value="New" type="submit" />
-#    </form>"
-
-<%= button_to "Create", { action: "create" }, remote: true, form: { "data-type" => "json" } %>
-# => "<form method="post" action="/images/create" class="button_to" data-remote="true" data-type="json">
-#      <input value="Create" type="submit" />
-#      <input name="authenticity_token" type="hidden" value="10f2163b45388899ad4d5ae948988266befcb6c3d1b2451cf657a0c293d605a6"/>
-#    </form>"
-
-
-
 
