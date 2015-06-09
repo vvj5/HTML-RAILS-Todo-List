@@ -18,8 +18,10 @@ header {
   font-weight: bold;
   padding: 10px;
   color: #333333;
-  a:link {color:black; text-decoration: none;}
+ a:link {color:#333333; text-decoration: none;}
+  a:visited {color:#555555; text-decoration: none;}
   a:hover {background:white;}
+  a:active {color:#333333; text-decoration: none;}
 }
 }
 
@@ -44,12 +46,25 @@ footer {
   font-weight: bold;
   padding: 10px;
   color: #333333;
-  a:link {color:#333333; text-decoration: none;}
+ a:link {color:#333333; text-decoration: none;}
+  a:visited {color:#555555; text-decoration: none;}
   a:hover {background:white;}
+  a:active {color:#333333; text-decoration: none;}
 }
 }
 
-.text_nav {
+.text_body_heading {
+  background-color: #cccccc;
+  border: 2px solid yellow;
+  padding: 20px;
+  text-align: center;
+  font-size: 24px;
+  font-family: Arial;
+  font-weight: bold;
+  color: #333333;
+}
+
+.text_body_todo {
   text-align: center;
   font-size: 18px;
   font-family: Arial;
@@ -59,18 +74,9 @@ footer {
   margin-top: 20px;
   a:link {color:#333333; text-decoration: none;}
   a:visited {color:#555555; text-decoration: none;}
-  a:hover {background:white;}
+  a:hover {background:red; color: white}
   a:active {color:#333333; text-decoration: none;}
 }
-
-.text_body_todo {
-  color: #333333;
-  font-family: Arial;
-  font-size: 18px;
-  text-align: center;
-}
-
-
 
 .body_box_outer {
   margin-top: 10px;

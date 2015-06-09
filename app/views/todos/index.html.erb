@@ -1,6 +1,10 @@
     <div class="body_box_outer">
         <div class="body_box_inner">
 
+          <div class="text_body_heading">
+          click on a todo item to view details, change or delete
+          </div>
+
           <div class="text_body_todo">
              <% todos.each do |todo| %>
             <%= render partial: 'todo', locals: { todo: todo } %>
