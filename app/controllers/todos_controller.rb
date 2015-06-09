@@ -14,7 +14,7 @@ class TodosController < ApplicationController
 
   def show
     begin
-      render html: Todo.find(params[:id])
+      render 'show.html.erb', locals: { todos: Todo.find(params[:id]) }
     rescue ActiveRecord::RecordNotFound => error
       render html: { error: error.message }, status: 422
     end
@@ -27,15 +27,4 @@ class TodosController < ApplicationController
   end
 
 end
-
-
-
-# Sending a DELETE request to http://localhost:3000/todos/1
-# should delete that todo from the database and return
-# the message “deleted” as json (Using Postman)
-
-
-
-# Sending a POST request to http://localhost:3000/todos with the params of { "body": "Finish Homework" }
-# I should see my todo returned to me as json (Using Postman)
 

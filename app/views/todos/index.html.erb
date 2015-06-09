@@ -1,8 +1,9 @@
-    <div class="black1">
-        <div class="blue2">
-          <div class="text3">
+    <div class="body_box_outer">
+        <div class="body_box_inner">
+
+          <div class="text_body_todo">
              <% todos.each do |todo| %>
-            <li> <%= render partial: 'todo', locals: { todo: todo } %> </li>
+            <%= render partial: 'todo', locals: { todo: todo } %>
             <% end %>
           </div>
         </div>

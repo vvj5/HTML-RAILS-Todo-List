@@ -1,14 +1,8 @@
-    <div class="black1">
-        <div class="blue2">
-          <div class="text3">
-             <% Todo.find(params[:id]) %>
-            <%= render partial: 'todo', locals: { todo: todo } %>
-            <% end %>
+    <div class="body_box_outer">
+        <div class="body_box_inner">
+          <div class="text_body_todo">
+            <%= render partial: 'todo', locals: { todo: todos } %>
           </div>
         </div>
       </div>
     </div>
-
-
-
-
