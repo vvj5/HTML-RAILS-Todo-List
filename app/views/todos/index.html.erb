@@ -8,6 +8,11 @@
           <div class="text_body_todo">
              <% todos.each do |todo| %>
             <%= render partial: 'todo', locals: { todo: todo } %>
+            <form action="/todos" method="POST">
+          <p>Task: <input type="text" name="Task"></p>
+          <p>Complete: <input type="checkbox" name="Complete"></p>
+          <input type="submit" value-"CREATE NEW TODO">
+          </form>
             <% end %>
           </div>
         </div>

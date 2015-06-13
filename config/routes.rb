@@ -1,14 +1,17 @@
 Rails.application.routes.draw do
 
-get '/todos/', to: 'todos#index'
+get     '/todos/',    to: 'todos#index'
 
-get '/todos/new', to: 'todos#new'
+get     '/todos/new', to: 'todos#new'
 
-post '/todos/', to: 'todos#create'
+post    '/todos/',    to: 'todos#create'
 
-delete '/todos/:id', to: 'todos#delete'
+delete  '/todos/:id', to: 'todos#delete'
 
-get '/todos/:id', to: 'todos#show'
+get     '/todos/:id', to: 'todos#show'
+
+get     'students/new', to: 'students#new'
+
 
 root to: 'todos#index'
 
